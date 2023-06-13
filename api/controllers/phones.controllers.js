@@ -1,7 +1,6 @@
 const phones = require('../data/phones.json');
 
-
-module.exports.list = (req, res, next) => { res.json(phone) }
+module.exports.list = (req, res, next) =>  res.json(phones) 
 
 module.exports.detail = (req, res, next) => {
   const phoneId = parseInt(req.params.id)
